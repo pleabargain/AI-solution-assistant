@@ -1,0 +1,65 @@
+{
+  "decision": "buy a new phone",
+  "risk_tolerance": 3,
+  "num_prompts": 3,
+  "temperature": 0.7,
+  "pros": [
+    {
+      "description": "New Oppo phone with modern features",
+      "impact": 8,
+      "likelihood": 1.0,
+      "cost": 1000.0
+    }
+  ],
+  "cons": [
+    {
+      "description": "High cost investment",
+      "impact": 7,
+      "likelihood": 1.0,
+      "cost": 1000.0
+    }
+  ],
+  "opportunity_costs": [
+    {
+      "description": "Could save money for other investments",
+      "impact": 6,
+      "likelihood": 0.8,
+      "value": 1000.0,
+      "input_source": "HUMAN"
+    }
+  ],
+  "timestamp": "2025-01-04T16:45:00.000Z",
+  "ai_analysis": {
+    "analysis": {
+      "summary": "Analysis of purchasing a new Oppo phone for $1000 USD...",
+      "confidence": 0.8,
+      "recommendations": [
+        "Based on the analysis, purchasing the Oppo phone represents a significant investment of $1000. While it offers modern features and guaranteed benefits (likelihood 1.0), the high cost should be carefully considered against your budget and needs. Consider exploring alternative options or waiting for promotions if budget is a concern."
+      ]
+    },
+    "evaluation": {
+      "pros_analysis": {
+        "total_impact": 8.0,
+        "total_cost": 1000.0
+      },
+      "cons_analysis": {
+        "total_impact": 7.0,
+        "total_cost": 1000.0
+      },
+      "risk_assessment": {
+        "raw_risk_score": 7.0,
+        "risk_tolerance": 3,
+        "adjusted_risk_score": 5.6
+      },
+      "opportunity_costs_analysis": {
+        "total_impact": 4.8,
+        "total_value": 1000.0
+      }
+    },
+    "metadata": {
+      "model_used": "llama2",
+      "timestamp": "2025-01-04T16:45:00.000Z",
+      "processing_time": 1.5
+    }
+  }
+}
