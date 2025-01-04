@@ -1,5 +1,8 @@
 # AI-Assisted Decision Making System - Proof of Concept
 
+# repo
+https://github.com/pleabargain/AI-solution-assistant
+
 A Python-based decision making system that uses Ollama for AI assistance in analyzing decisions.
 
 ## Prerequisites
