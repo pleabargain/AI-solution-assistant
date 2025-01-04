@@ -1,0 +1,49 @@
+{
+  "decision": "Should I buy a new laptop?",
+  "pros": [
+    {
+      "description": "Better performance for development work",
+      "impact": 9,
+      "likelihood": 0.95,
+      "cost": 1500
+    },
+    {
+      "description": "Improved battery life",
+      "impact": 7,
+      "likelihood": 0.9,
+      "cost": 0
+    },
+    {
+      "description": "More portable than current laptop",
+      "impact": 6,
+      "likelihood": 1.0,
+      "cost": 0
+    }
+  ],
+  "cons": [
+    {
+      "description": "High initial cost",
+      "impact": 8,
+      "likelihood": 1.0,
+      "cost": 1500
+    },
+    {
+      "description": "Time needed to set up new development environment",
+      "impact": 5,
+      "likelihood": 1.0,
+      "cost": 200
+    },
+    {
+      "description": "Potential compatibility issues with current software",
+      "impact": 7,
+      "likelihood": 0.3,
+      "cost": 100
+    }
+  ],
+  "timestamp": "2025-01-04T15:30:00Z",
+  "ai_analysis": {
+    "analysis": "Based on the provided factors, purchasing a new laptop appears to be a justified decision. The high likelihood of improved performance and battery life, combined with guaranteed portability, outweighs the initial cost. While setup time is a guaranteed inconvenience, it's a one-time cost. The risk of compatibility issues is relatively low (30%) and can be mitigated. The total potential benefits (weighted by likelihood) outweigh the costs and risks.",
+    "model_used": "llama3.2:latest",
+    "timestamp": "2025-01-04T15:30:10Z"
+  }
+}

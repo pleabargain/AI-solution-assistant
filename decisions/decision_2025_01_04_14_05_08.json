@@ -1,0 +1,14 @@
+{
+  "decision": "go the USA without my wife",
+  "pros": [
+    "less cost"
+  ],
+  "cons": [
+    "I will miss her"
+  ],
+  "timestamp": "2025-01-04T14:05:07.899398",
+  "ai_analysis": {
+    "error": "AI analysis failed: model \"llama2\" not found, try pulling it first",
+    "timestamp": "2025-01-04T14:05:08.018297"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "decision": "buy an apartment in Dubai",
+  "risk_tolerance": 6,
+  "pros": [
+    {
+      "description": "Potential for high return on investment due to Dubai's growing real estate market",
+      "impact": 8,
+      "likelihood": 0.7,
+      "cost": 0,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Tax-free rental income potential",
+      "impact": 7,
+      "likelihood": 0.9,
+      "cost": 0,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Access to luxury lifestyle and amenities",
+      "impact": 6,
+      "likelihood": 0.95,
+      "cost": 5000,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Strategic location for international business",
+      "impact": 7,
+      "likelihood": 0.8,
+      "cost": 0,
+      "input_source": "MACHINE"
+    }
+  ],
+  "cons": [
+    {
+      "description": "High initial investment required",
+      "impact": 9,
+      "likelihood": 1.0,
+      "cost": 500000,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Market volatility and potential property bubble risks",
+      "impact": 7,
+      "likelihood": 0.4,
+      "cost": 100000,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Property maintenance costs in harsh climate",
+      "impact": 5,
+      "likelihood": 0.9,
+      "cost": 10000,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Distance from home country and management challenges",
+      "impact": 6,
+      "likelihood": 0.8,
+      "cost": 15000,
+      "input_source": "MACHINE"
+    }
+  ],
+  "timestamp": "2025-01-04T16:17:00Z",
+  "ai_analysis": {
+    "analysis": {
+      "summary": "Buying an apartment in Dubai represents a significant investment opportunity with notable risks. The tax-free environment and growing market offer strong potential returns, but requires substantial capital and careful consideration of market stability.",
+      "confidence": 0.85,
+      "recommendations": [
+        "Conduct thorough market research in specific Dubai neighborhoods",
+        "Consider property management services for remote ownership",
+        "Verify all legal requirements for foreign ownership",
+        "Assess long-term market stability and growth projections"
+      ]
+    },
+    "evaluation": {
+      "pros_analysis": {
+        "total_impact": 28,
+        "total_cost": 5000
+      },
+      "cons_analysis": {
+        "total_impact": 27,
+        "total_cost": 625000
+      },
+      "risk_assessment": {
+        "raw_risk_score": 7.5,
+        "risk_tolerance": 6,
+        "adjusted_risk_score": 8.2
+      }
+    },
+    "metadata": {
+      "model_used": "gpt-4",
+      "timestamp": "2025-01-04T16:17:00Z",
+      "processing_time": 1.2
+    }
+  }
+}

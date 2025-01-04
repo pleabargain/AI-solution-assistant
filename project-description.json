@@ -1,0 +1,228 @@
+{
+  "project": {
+    "name": "AI-Assisted Decision Making System",
+    "version": "1.0.0",
+    "last_updated": "2025-01-04",
+    "description": "A Python-based decision making system using Ollama for AI assistance",
+    "requirements": {
+      "python": "latest",
+      "description": "Project uses the latest stable Python release for maximum feature availability and performance",
+      "dependencies": {
+        "ollama-python": "latest",
+        "description": "Official Python client for Ollama integration (https://github.com/ollama/ollama-python)",
+        "pytest": "latest",
+        "description": "Primary testing framework with support for fixtures, async testing, and extensive plugin ecosystem",
+        "pathlib": "built-in",
+        "description": "Cross-platform path handling using Python's pathlib"
+      },
+      "platform": {
+        "compatibility": "cross-platform",
+        "supported_os": ["Windows", "macOS", "Linux"],
+        "path_handling": "pathlib for cross-platform compatibility",
+        "file_operations": "os-agnostic implementations required"
+      }
+    }
+  },
+
+  "architecture": {
+    "structure": {
+      "directory": "single_directory",
+      "files": [
+        "main.py",
+        "model_handler.py",
+        "input_processor.py",
+        "decision_logger.py",
+        "ai_assistant.py",
+        "json_manager.py",
+        "error_handler.py",
+        "README.md"
+      ],
+      "directories": {
+        "logs": {
+          "description": "Log file storage",
+          "files": [
+            "decision_maker.log",
+            "error.log"
+          ]
+        },
+        "decisions": {
+          "description": "Decision storage directory",
+          "file_pattern": "decision_YYYY_MM_DD_HH_MM_SS.json"
+        },
+        "tests": {
+          "description": "Test files",
+          "subdirectories": [
+            "unit",
+            "integration",
+            "fixtures"
+          ]
+        }
+      }
+    },
+    "logging": {
+      "type": "centralized",
+      "format": "single_rotating_file",
+      "filename": "decision_maker.log",
+      "rotation": "daily"
+    }
+  },
+
+  "error_handling": {
+    "ollama_errors": {
+      "type": "exit_with_logging",
+      "logging_details": [
+        "installation_status",
+        "connection_details",
+        "system_info",
+        "stack_trace",
+        "timestamp"
+      ]
+    },
+    "model_selection": {
+      "type": "show_available_with_default",
+      "default_model": "llama-3.2:latest",
+      "user_prompt": true,
+      "timeout_behavior": "use_default"
+    },
+    "local_connection": {
+      "checks": [
+        "service_status",
+        "port_accessibility",
+        "process_health"
+      ]
+    }
+  },
+
+  "data_handling": {
+    "user_input": {
+      "pros_cons": {
+        "format": "ai_suggestions_with_selection",
+        "validation": "none",
+        "storage": "preserve_original",
+        "input_mode": "selection",
+        "selection_format": "comma_separated_numbers_or_asterisk",
+        "suggestions_per_batch": 5,
+        "continue_prompt": "Would you like to see more? (y/n): ",
+        "min_entries": 1,
+        "max_entries": 10
+      },
+      "estimates": {
+        "format": "numerical_and_text",
+        "types_allowed": ["numbers", "descriptive_text"],
+        "validation": "none"
+      }
+    },
+    "storage": {
+      "json_files": {
+        "directory": "./decisions",
+        "naming": "{decision_prefix}_YYYY_MM_DD_HH_MM_SS.json",
+        "organization": "single_directory_timestamped",
+        "filename_rules": {
+          "prefix": "sanitized_decision_text",
+          "max_prefix_length": 50,
+          "allowed_chars": "alphanumeric_and_underscore",
+          "case": "lowercase"
+        }
+      }
+    }
+  },
+
+  "ai_integration": {
+    "prompt_structure": {
+      "base_template": "You are assisting with a decision about {decision_type}.\nPros: {pros}\nCons: {cons}\nLikelihood: {likelihood}\nImpact: {impact}\nCost: {cost}\n",
+      "custom_append": true,
+      "save_prompt": true
+    },
+    "response_format": {
+      "type": "json",
+      "structure": {
+        "analysis": {
+          "summary": "string",
+          "confidence": "number",
+          "recommendations": "array"
+        },
+        "evaluation": {
+          "pros_analysis": "object",
+          "cons_analysis": "object",
+          "risk_assessment": "object"
+        },
+        "metadata": {
+          "model_used": "string",
+          "timestamp": "string",
+          "processing_time": "number"
+        }
+      }
+    }
+  },
+
+  "user_experience": {
+    "validation_feedback": {
+      "type": "critical_only",
+      "critical_errors": [
+        "ollama_connection_failure",
+        "json_parsing_failure",
+        "filesystem_errors",
+        "model_loading_errors"
+      ]
+    },
+    "input_flow": {
+      "type": "interactive",
+      "operations": ["add", "edit", "remove"],
+      "display": "current_list_after_change",
+      "continuous_operation": {
+        "enabled": true,
+        "prompt": "Would you like to consider another decision? (y/n): ",
+        "exit_condition": "user_choice_n",
+        "error_handling": "continue_on_error",
+        "save_notification": "Notify user when file is saved before exiting",
+        "exit_message": "Display thank you message before program termination"
+      }
+    },
+    "ai_assistance": {
+      "mode": "toggle",
+      "default": "off",
+      "assistance_points": [
+        "pros_input",
+        "cons_input",
+        "likelihood_estimation",
+        "impact_analysis",
+        "cost_evaluation"
+      ]
+    },
+    "notifications": {
+      "file_operations": {
+        "save_confirmation": {
+          "enabled": true,
+          "message": "Your file has been saved",
+          "display_timing": "after_save_before_exit"
+        }
+      },
+      "exit_messages": {
+        "enabled": true,
+        "message": "Thank you for using the Decision Making Assistant",
+        "display_timing": "before_program_exit"
+      }
+    }
+  },
+
+  "logging_config": {
+    "file_path": "decision_maker.log",
+    "rotation": "daily",
+    "levels": {
+      "critical_errors": "ERROR",
+      "operations": "INFO",
+      "ai_interactions": "INFO",
+      "user_actions": "INFO"
+    },
+    "formats": {
+      "timestamp": "YYYY-MM-DD HH:mm:ss",
+      "include_fields": [
+        "timestamp",
+        "level",
+        "module",
+        "function",
+        "message"
+      ]
+    }
+  }
+}

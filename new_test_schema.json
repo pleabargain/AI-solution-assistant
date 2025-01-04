@@ -1,0 +1,79 @@
+{
+  "decision": "buy an electric car",
+  "pros": [
+    {
+      "description": "Lower environmental impact through reduced emissions",
+      "impact": 8,
+      "likelihood": 1.0,
+      "cost": 0,
+      "input_source": "HUMAN"
+    },
+    {
+      "description": "Reduced fuel costs compared to gasoline vehicles",
+      "impact": 7,
+      "likelihood": 0.9,
+      "cost": 0,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Tax incentives and rebates available",
+      "impact": 6,
+      "likelihood": 0.8,
+      "cost": 0,
+      "input_source": "MACHINE"
+    }
+  ],
+  "cons": [
+    {
+      "description": "High initial purchase cost",
+      "impact": 9,
+      "likelihood": 1.0,
+      "cost": 45000,
+      "input_source": "HUMAN"
+    },
+    {
+      "description": "Limited charging infrastructure in some areas",
+      "impact": 7,
+      "likelihood": 0.7,
+      "cost": 2000,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Battery replacement costs after warranty expiration",
+      "impact": 8,
+      "likelihood": 0.4,
+      "cost": 10000,
+      "input_source": "MACHINE"
+    }
+  ],
+  "timestamp": "2025-01-04T16:30:00.000Z",
+  "ai_analysis": {
+    "analysis": {
+      "summary": "The decision to buy an electric car presents significant environmental benefits and potential long-term cost savings, balanced against substantial upfront costs and infrastructure considerations.",
+      "confidence": 0.85,
+      "recommendations": [
+        "Consider hybrid options if charging infrastructure is limited in your area",
+        "Research available tax incentives and rebates to offset initial costs",
+        "Calculate total cost of ownership including potential battery replacement"
+      ]
+    },
+    "evaluation": {
+      "pros_analysis": {
+        "total_impact": 17.7,
+        "total_cost": 0
+      },
+      "cons_analysis": {
+        "total_impact": 18.2,
+        "total_cost": 57000
+      },
+      "risk_assessment": {
+        "risk_score": 65.5
+      }
+    },
+    "metadata": {
+      "model_used": "llama3.2",
+      "timestamp": "2025-01-04T16:30:01.234Z",
+      "processing_time": 28.45
+    }
+  }
+}

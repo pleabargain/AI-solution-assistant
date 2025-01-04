@@ -1,0 +1,103 @@
+{
+  "decision": "go to the party on a work night",
+  "risk_tolerance": 4,
+  "pros": [
+    {
+      "description": "Social networking opportunity",
+      "impact": 6,
+      "likelihood": 0.8,
+      "cost": 0,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Stress relief and enjoyment",
+      "impact": 7,
+      "likelihood": 0.9,
+      "cost": 20,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Maintaining friendships",
+      "impact": 8,
+      "likelihood": 0.95,
+      "cost": 0,
+      "input_source": "MACHINE"
+    }
+  ],
+  "cons": [
+    {
+      "description": "Reduced sleep affecting next day's work performance",
+      "impact": 8,
+      "likelihood": 0.9,
+      "cost": 0,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Potential hangover",
+      "impact": 7,
+      "likelihood": 0.6,
+      "cost": 10,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Money spent on transportation and drinks",
+      "impact": 4,
+      "likelihood": 1.0,
+      "cost": 50,
+      "input_source": "MACHINE"
+    }
+  ],
+  "opportunity_costs": [
+    {
+      "description": "Lost productive evening work time",
+      "impact": 6,
+      "likelihood": 1.0,
+      "value": 100,
+      "input_source": "MACHINE"
+    },
+    {
+      "description": "Missed early morning gym session",
+      "impact": 5,
+      "likelihood": 0.8,
+      "value": 30,
+      "input_source": "MACHINE"
+    }
+  ],
+  "timestamp": "2025-01-04T19:30:00Z",
+  "ai_analysis": {
+    "analysis": {
+      "summary": "The decision to attend a party on a work night presents moderate risks with both social benefits and professional consequences. While the social and emotional benefits are significant, the potential impact on work performance is a major consideration.",
+      "confidence": 0.85,
+      "recommendations": [
+        "Set a strict departure time to ensure minimum 6 hours of sleep",
+        "Prepare work materials for next day before going to the party",
+        "Arrange transportation in advance to minimize costs and risks",
+        "Consider limiting alcohol consumption to reduce next-day impact"
+      ]
+    },
+    "evaluation": {
+      "pros_analysis": {
+        "total_impact": 21,
+        "total_cost": 20
+      },
+      "cons_analysis": {
+        "total_impact": 19,
+        "total_cost": 60
+      },
+      "opportunity_costs_analysis": {
+        "total_impact": 11,
+        "total_value": 130
+      },
+      "risk_assessment": {
+        "raw_risk_score": 6.5,
+        "risk_tolerance": 4,
+        "adjusted_risk_score": 7.8
+      }
+    },
+    "metadata": {
+      "model_used": "decision-analyzer-v1",
+      "timestamp": "2025-01-04T19:30:00Z",
+      "processing_time": 0.45
+    }
+  }
+}
