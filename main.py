@@ -114,7 +114,7 @@ def evaluate_item(item, category):
 def get_machine_opportunity_costs(decision):
     """Generate AI suggestions for opportunity costs."""
     try:
-        model = 'llama2'  # Using llama2 model
+        model = 'llama3.2'  # Using llama3.2 model
         prompt = f"""Generate exactly 5 opportunity costs for the decision: {decision}
         These should be specific things that would be foregone by making this decision.
         Format as a simple numbered list.
@@ -370,7 +370,7 @@ def get_ai_analysis(data):
     
     # Get response from Ollama
     try:
-        model = 'llama2'  # Using llama2 model
+        model = 'llama3.2'  # Using llama3.2 model
         response = ollama.chat(model=model, messages=[
             {
                 'role': 'user',
@@ -410,7 +410,7 @@ def get_ai_analysis(data):
                 }
             },
             "metadata": {
-                "model_used": "llama2",  # Using llama2 model
+                "model_used": "llama3.2",  # Using llama3.2 model
                 "timestamp": datetime.now().isoformat(),
                 "processing_time": processing_time
             }
@@ -419,7 +419,7 @@ def get_ai_analysis(data):
         return {
             "error": f"AI analysis failed: {str(e)}",
             "metadata": {
-                "model_used": "llama2",  # Using llama2 model
+                "model_used": "llama3.2",  # Using llama3.2 model
                 "timestamp": datetime.now().isoformat(),
                 "processing_time": (datetime.now() - start_time).total_seconds()
             }
@@ -492,7 +492,7 @@ def main():
         print("Error: Could not load project configuration. Using default settings.")
         config = {
             "settings": {
-                "default_model": "llama2",
+                "default_model": 'llama3.2',
                 "default_temperature": 0.7,
                 "default_prompts": 3
             }

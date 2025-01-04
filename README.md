@@ -11,6 +11,10 @@ A Python-based decision making system that uses Ollama for AI assistance in anal
 2. Ollama installed and running locally
 3. llama-3.2 model pulled in Ollama
 
+# Cline 
+cline anthropic insists on using llama2! I had to change it to llama3.2 over and over despite telling cline to ONLY use llama3.2!
+
+
 ## Setup
 
 1. Create and activate a virtual environment:
